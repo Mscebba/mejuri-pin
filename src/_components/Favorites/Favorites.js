@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import { createStructuredSelector } from 'reselect';
@@ -19,6 +19,11 @@ import { ProductsCount } from '_components/Category/Category.styled';
 import { FavoritesContainer, FavoriteIcon } from './Favorites.styled';
 
 function Favorites({ items, favorites: { isLoading, error } }) {
+  //fix for React Router
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   let renderProducts = isLoading ? (
     <Spinner />
   ) : error ? (
