@@ -1,0 +1,38 @@
+@import 'styles/_variables.scss';
+.category-nav {
+  font-family: $serifFamily;
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  top: 130px;
+  overflow-y: auto;
+  // height: 100%;
+  > a {
+    font-size: 1rem;
+    color: $categoryNav;
+    &.active {
+      font-weight: 700;
+      color: $black;
+    }
+    + a {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: $medium-breakpoint) {
+    position: unset;
+    top: unset;
+    flex-flow: row;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+
+    nav {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $xsmall-breakpoint) {
+    display: none;
+  }
+}

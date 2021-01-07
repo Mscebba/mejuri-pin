@@ -1,0 +1,65 @@
+$serifFamily: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+$sansFamily: 'Ubuntu', Arial, Helvetica, sans-serif;
+$icons: 'Material Icons';
+
+//theme
+$primaryColor: #202020;
+$secondaryColor: #3f3f3f;
+$accentColor: #ffdf6c;
+$backgroundColor: #ffffff;
+$categoryNav: #757575;
+
+$greyDark: #424242;
+$greyMed: #707070;
+$greyLight: #c3c3c3;
+$greyLightest: #ebebeb;
+$white: #ffffff;
+$black: #000000;
+
+$imgContainer: #f4f4f4;
+$imgContainerHover: rgba(238, 156, 109, 0.1);
+$imgContainerHoverText: rgba(182, 3, 3, 0.267);
+
+$error: #ff0000;
+
+$header: 85px;
+
+$boxShadow: 0 0 2px 0
+  rgba(
+    $color: #000000,
+    $alpha: 0.3,
+  );
+
+$xxlarge-breakpoint: 1360px;
+$xlarge-breakpoint: 1024px;
+$large-breakpoint: 998px;
+$medium-breakpoint: 768px;
+$small-breakpoint: 560px;
+$xsmall-breakpoint: 380px;
+
+.side-padd {
+  @media screen and (min-width: $large-breakpoint) {
+    padding: 3rem 4vw;
+  }
+  @media screen and (max-width: $large-breakpoint) {
+    padding: 3rem 4vw;
+  }
+  @media screen and (max-width: $medium-breakpoint) {
+    padding: 3rem 2vw;
+  }
+  @media screen and (max-width: $small-breakpoint) {
+    padding: 2rem 1rem;
+  }
+}
+
+.header-padd {
+  @media screen and (min-width: $medium-breakpoint) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: $medium-breakpoint) {
+    padding: 0 2vw;
+  }
+  @media screen and (max-width: $small-breakpoint) {
+    padding: 0 1rem;
+  }
+}
